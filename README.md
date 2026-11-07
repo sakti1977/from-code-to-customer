@@ -1,5 +1,7 @@
 # From Code to Customer — FDE field guide
 
+**What is new?** See [LATEST.md](LATEST.md) for changes since the book was printed.
+
 A companion for working engineers learning domain discovery, system design,
 agentic implementation and customer communication. Start with one workflow:
 synthetic US provider-side prior authorization.
@@ -11,6 +13,7 @@ The healthcare lab is synthetic. No real patient data or real payer integration.
 
 | I need help with… | Start here | Produce |
 |---|---|---|
+| Running my first agent lab (no AI model needed) | [Beginner lab](beginner-lab/README.md) | A run that shows a double payment, then the fix |
 | Learning an unfamiliar domain | [Domain fieldwork](domain/README.md) | Reviewed workflow and evidence ledger |
 | Designing a dependable system | [System design](system-design/README.md) | Architecture decision and race-condition test |
 | Speaking and writing clearly | [Communication](communication/README.md) | Recorded explanation and customer follow-up |
@@ -30,6 +33,7 @@ Python 3.10 or newer, standard library only. From this directory:
 ```sh
 python -m unittest discover -s prior-auth -p 'test_*.py' -v
 python -m unittest discover -s system-design -p 'test_*.py' -v
+python -m unittest discover -s beginner-lab -p 'test_*.py' -v
 python system-design/review_race.py
 python prior-auth/prior_auth_lab.py demo --out /tmp/cedar-demo-new
 ```
