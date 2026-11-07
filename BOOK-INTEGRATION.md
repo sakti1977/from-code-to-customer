@@ -1,6 +1,6 @@
 # How this companion should strengthen the book
 
-The book remains a 60-page entry point. The companion carries exercises, detailed
+The book is now a two-part edition (Edition 5, November 2026): Part 1 is a short beginner path with a runnable lab, Part 2 is the deeper healthcare case. Living updates are in LATEST.md. The companion carries exercises, detailed
 implementation and reproducible evidence. Do not claim a new book revision has
 been published until its references and PDF have actually been updated.
 
