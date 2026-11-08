@@ -42,3 +42,21 @@ class AskModel(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_notebook_cells_run_in_order():
+    """The no-typing notebook must stay runnable top to bottom."""
+    import contextlib
+    import io
+    import json
+    import pathlib
+    nb = json.loads((pathlib.Path(__file__).parent / "payment_lab.ipynb").read_text())
+    scope = {"__name__": "notebook"}
+    out = io.StringIO()
+    with contextlib.redirect_stdout(out):
+        for cell in nb["cells"]:
+            if cell["cell_type"] == "code":
+                exec("".join(cell["source"]), scope)
+    text = out.getvalue()
+    assert "Rs 97,000" in text and "Rs 48,500" in text
+    assert "HELD" in text
