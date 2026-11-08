@@ -1,5 +1,7 @@
 # Beginner lab (Part 1 of the book)
 
+**Nothing to type:** [Open the lab in your browser](https://colab.research.google.com/github/sakti1977/from-code-to-customer/blob/main/beginner-lab/payment_lab.ipynb) and press Shift + Enter on each cell. No install needed.
+
 Two small files, standard library only, Python 3.10 or newer.
 
 | File | What it shows |
