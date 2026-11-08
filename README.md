@@ -1,4 +1,6 @@
-# From Code to Customer — FDE field guide
+# From Code to Customer
+
+*Minocha Praxis / Kodiflex Quick Guides · Accelerating AI Adoption Series · Authored by Sakti Prasad Bagchi · Bangalore Tech Summit Edition (Edition 5, November 2026)*
 
 **What is new?** See [LATEST.md](LATEST.md) for changes since the book was printed.
 
