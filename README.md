@@ -1,6 +1,6 @@
 # From Code to Customer
 
-*Minocha Praxis / Kodiflex Quick Guides · Accelerating AI Adoption Series · Authored by Sakti Prasad Bagchi · Bangalore Tech Summit Edition (Edition 5, November 2026)*
+*Minocha Praxis / Kodiflex Quick Guides · Accelerating AI Adoption Series · Authored by Sakti Prasad Bagchi · First Edition, Bangalore Tech Summit Edition (November 2026)*
 
 **What is new?** See [LATEST.md](LATEST.md) for changes since the book was printed.
 

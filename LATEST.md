@@ -1,6 +1,6 @@
 # Latest: what has changed since the book was printed
 
-The printed book (Edition 5, November 2026) teaches patterns that last. Tool
+The printed book (First Edition, November 2026) teaches patterns that last. Tool
 names and standards move faster than print. This page is the living layer:
 newest entries first, each with a primary source. Last reviewed: **8 November 2026**.
 
@@ -38,7 +38,4 @@ https://www.anthropic.com/research/building-effective-agents
 - Entries older than twelve months are re-checked or removed at each review.
 
 ## Book errata
-- Edition 5 (8 November 2026): the answer-page references in the Part 2
-  exercises were corrected after an earlier build left them pointing at the
-  wrong pages. If you hold an earlier two-part PDF, use the answer pages titled
-  "Answers: discovery / engineering / evaluation / delivery".
+- None yet. Corrections to the First Edition will be listed here with the page number.
