@@ -1,0 +1,293 @@
+{
+  "scope": "12 authored development fixtures; no held-out set or live model",
+  "summary": {
+    "indexed": {
+      "exact": 5,
+      "unsupported": 5,
+      "missing": 6
+    },
+    "cautious": {
+      "exact": 11,
+      "unsupported": 0,
+      "missing": 2
+    }
+  },
+  "cases": [
+    {
+      "id": "01-routine",
+      "expected": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "cautious": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "02-missing-tags",
+      "expected": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {},
+      "cautious": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": false,
+        "unsupported": 0,
+        "missing": 2
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "03-misleading-tag",
+      "expected": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {
+        "R-REFERRAL": "D-02",
+        "R-ORDER": "D-09"
+      },
+      "cautious": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": false,
+        "unsupported": 1,
+        "missing": 1
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "04-superseded-copy",
+      "expected": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {
+        "R-REFERRAL": "D-02",
+        "R-ORDER": "D-09"
+      },
+      "cautious": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": false,
+        "unsupported": 1,
+        "missing": 1
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "05-wrong-service",
+      "expected": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "cautious": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": false,
+        "unsupported": 1,
+        "missing": 0
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "06-unsigned-order",
+      "expected": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {
+        "R-REFERRAL": "D-02"
+      },
+      "cautious": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "07-missing-referral",
+      "expected": {
+        "R-ORDER": "D-01"
+      },
+      "indexed": {
+        "R-ORDER": "D-01"
+      },
+      "cautious": {
+        "R-ORDER": "D-01"
+      },
+      "indexed_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "08-two-current-orders",
+      "expected": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {
+        "R-ORDER": "D-03",
+        "R-REFERRAL": "D-02"
+      },
+      "cautious": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": false,
+        "unsupported": 1,
+        "missing": 0
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "09-injected-text",
+      "expected": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "cautious": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "10-wrong-patient",
+      "expected": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {
+        "R-REFERRAL": "D-02"
+      },
+      "cautious": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    },
+    {
+      "id": "11-prose-without-headers",
+      "expected": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {},
+      "cautious": {},
+      "indexed_score": {
+        "exact": false,
+        "unsupported": 0,
+        "missing": 2
+      },
+      "cautious_score": {
+        "exact": false,
+        "unsupported": 0,
+        "missing": 2
+      }
+    },
+    {
+      "id": "12-status-unclear",
+      "expected": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed": {
+        "R-ORDER": "D-01",
+        "R-REFERRAL": "D-02"
+      },
+      "cautious": {
+        "R-REFERRAL": "D-02"
+      },
+      "indexed_score": {
+        "exact": false,
+        "unsupported": 1,
+        "missing": 0
+      },
+      "cautious_score": {
+        "exact": true,
+        "unsupported": 0,
+        "missing": 0
+      }
+    }
+  ]
+}
