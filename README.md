@@ -2,6 +2,8 @@
 
 *Minocha Praxis / Kodiflex Quick Guides · Accelerating AI Adoption Series · Authored by Sakti Prasad Bagchi · First Edition (2026)*
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sakti1977/from-code-to-customer/blob/main/beginner-lab/payment_lab.ipynb)
+
 **What is new?** See [LATEST.md](LATEST.md) for changes since the book was printed.
 
 A companion for working engineers learning domain discovery, system design,
