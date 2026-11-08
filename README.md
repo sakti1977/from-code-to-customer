@@ -1,6 +1,6 @@
 # From Code to Customer
 
-*Minocha Praxis / Kodiflex Quick Guides · Accelerating AI Adoption Series · Authored by Sakti Prasad Bagchi · First Edition, Bangalore Tech Summit Edition (November 2026)*
+*Minocha Praxis / Kodiflex Quick Guides · Accelerating AI Adoption Series · Authored by Sakti Prasad Bagchi · First Edition (2026)*
 
 **What is new?** See [LATEST.md](LATEST.md) for changes since the book was printed.
 
@@ -20,6 +20,7 @@ The healthcare lab is synthetic. No real patient data or real payer integration.
 | Designing a dependable system | [System design](system-design/README.md) | Architecture decision and race-condition test |
 | Speaking and writing clearly | [Communication](communication/README.md) | Recorded explanation and customer follow-up |
 | Building an agent runtime | [Prior-auth lab](prior-auth/README.md) | Candidate packet and restart trace |
+| Checking that a source really fits | [Evidence lab](evidence-lab/README.md) | Twelve-case comparison and a test that reproduces a known weakness |
 | Proving model usefulness | [Evaluation protocol](evaluation/README.md) | Measured comparison, including failures |
 | Controlling an AI coding agent | [Harness Engineering](https://github.com/sakti1977/Harness-Engineering) | Outcome checks and a verified handoff |
 
@@ -36,6 +37,7 @@ Python 3.10 or newer, standard library only. From this directory:
 python -m unittest discover -s prior-auth -p 'test_*.py' -v
 python -m unittest discover -s system-design -p 'test_*.py' -v
 python -m unittest discover -s beginner-lab -p 'test_*.py' -v
+python -m unittest discover -s evidence-lab -p 'test_*.py' -v
 python system-design/review_race.py
 python prior-auth/prior_auth_lab.py demo --out /tmp/cedar-demo-new
 ```

@@ -16,4 +16,6 @@ jobs:
       - run: python -m unittest discover -s prior-auth -p 'test_*.py' -v
       - run: python -m unittest discover -s system-design -p 'test_*.py' -v
       - run: python -m unittest discover -s beginner-lab -p 'test_*.py' -v
+      - run: python -m unittest discover -s evidence-lab -p 'test_*.py' -v
       - run: python system-design/review_race.py
+      - run: python evidence-lab/evidence_lab.py
